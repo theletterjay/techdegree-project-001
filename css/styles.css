@@ -63,7 +63,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/nyc.jpg') no-repeat center;
+  background: url('img/nyc.jpg') no-repeat center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
