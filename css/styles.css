@@ -9,14 +9,14 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #cacaca;
 }
 
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: rgb(172, 172, 172);
 }
 
 a:hover {
@@ -63,15 +63,15 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('../img/nyc.jpg') no-repeat center;
+  background: linear-gradient(rgba(153, 153, 153, 0.45),
+      rgba(10, 10, 10, 0.45)), url('../img/nyc.jpg') no-repeat center;
+  /* ^^^^ imformation on tinted images sourced from: https://css-tricks.com/tinted-images-multiple-backgrounds/ */
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-
-header {
   line-height: 1.5;
 }
+
 
 header .profile-image {
   background-color: #fff;
@@ -81,11 +81,13 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .7s;
 }
 
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: rotate(360deg) scale(.8);
+  /* ^^^ transform line realized from: 
+  https://thoughtbot.com/blog/transitions-and-transforms */
 }
 
 .tag {
@@ -106,7 +108,7 @@ header .profile-image:hover {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  /* text-align: left; */
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
@@ -117,8 +119,19 @@ header .profile-image:hover {
   text-align: center;
 }
 
+.card p {
+  text-align: left;
+}
+
+.card img {
+  width: 350px;
+  text-align: inherit;
+  border: 2px solid red;
+  object-fit: contain;
+}
+
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #6428f0;
 }
 
 ul.skills {
@@ -139,15 +152,17 @@ ul.skills {
   background: #0399ff;
 }
 
-/* Experience Page - Ruleset */
+/******* Experience Page - Ruleset *******/
 
-.box li {
-  /* text-align: center; */
+.box-exp li {
+  text-align: justify;
   line-height: 1.5;
   margin-bottom: .4rem;
 }
 
-/* End of Experience Ruleset */
+/******* End of Experience Ruleset *******/
+
+
 
 footer {
   width: 100%;
