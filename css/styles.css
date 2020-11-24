@@ -25,7 +25,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.top-links {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -51,6 +51,7 @@ a:hover {
 
 .nav li {
   padding: 5px 10px 10px 10px;
+  font-size: 1.2rem;
 }
 
 .nav a {
@@ -101,10 +102,11 @@ header .profile-image:hover {
 
 .location {
   background-color: #222;
-  color: yellow;
+  color: rgb(226, 226, 0);
 }
 
-.card {
+.tours,
+.work {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -115,22 +117,25 @@ header .profile-image:hover {
   transition: all .5s;
 }
 
-.card h2 {
+.tours h2,
+.work {
   text-align: center;
 }
 
-.card p {
+.tours p,
+.work {
   text-align: left;
 }
 
-.card img {
+.tours img {
   width: 350px;
   text-align: inherit;
-  border: 2px solid red;
+  border: 2px solid rgb(0, 0, 0);
   object-fit: contain;
 }
 
-.card:hover {
+.tours:hover,
+.work:hover {
   border-color: #6428f0;
 }
 
@@ -142,14 +147,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #e48900e1;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #0084dd;
 }
 
 /******* Experience Page - Ruleset *******/
